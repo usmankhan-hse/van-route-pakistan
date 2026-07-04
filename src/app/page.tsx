@@ -6,7 +6,10 @@ export default function Home() {
           Rawalpindi&apos;s Trusted Van Service Platform
         </p>
 
-        <h1 className="max-w-4xl text-3xl font-black tracking-tight sm:text-5xl"></h1>
+        <h1 className="max-w-4xl text-3xl font-black tracking-tight sm:text-5xl">
+          Find verified school vans with vacant seats on your route in{" "}
+          <span className="text-[#008F3A]">Rawalpindi.</span>
+        </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
           Send one request and receive offers from verified van drivers. Choose
