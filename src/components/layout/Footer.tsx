@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 const Footer = () => {
   return (
     <footer className="border-t border-gray-100 bg-[#F6FBF8]">
@@ -14,11 +13,9 @@ const Footer = () => {
             <Link href="/privacy" className="transition hover:text-[#008F3A]">
               Privacy
             </Link>
-
             <Link href="/terms" className="transition hover:text-[#008F3A]">
               Terms
             </Link>
-
             <Link href="/contact" className="transition hover:text-[#008F3A]">
               Contact
             </Link>
