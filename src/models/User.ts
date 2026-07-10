@@ -2,12 +2,12 @@ import { UserRole } from "@/constants/roles";
 import mongoose, { model, models, Schema } from "mongoose";
 
 export type UserDocument = {
-    _id : mongoose.Types.ObjectId;
-    name: string;
+  _id : mongoose.Types.ObjectId;
+  name: string;
   email: string;
   password: string;
   phone?: string;
-  role: UserRole;
+  roles: UserRole[];
   isVerified: boolean;
   createdAt: Date;
   updatedAt: Date;
@@ -36,10 +36,10 @@ const userSchema = new Schema<UserDocument>(
       type: String,
       trim: true,
     },
-    role :{
-        type : String,
+    roles :{
+        type : [String],
         enum : Object.values(UserRole),
-        default: UserRole.CUSTOMER,
+        default: [UserRole.CUSTOMER],
         required: true
     },
     isVerified: {
