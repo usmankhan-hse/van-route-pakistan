@@ -8,6 +8,7 @@ export type UserDocument = {
   password: string;
   phone?: string;
   roles: UserRole[];
+  photo?: String,
   isVerified: boolean;
   createdAt: Date;
   updatedAt: Date;
@@ -41,6 +42,10 @@ const userSchema = new Schema<UserDocument>(
         enum : Object.values(UserRole),
         default: [UserRole.CUSTOMER],
         required: true
+    },
+    photo:{
+      type: String,
+      trim: true      
     },
     isVerified: {
       type: Boolean,
