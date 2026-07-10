@@ -23,10 +23,10 @@ const userSchema = new Schema<UserDocument>(
 
     email: {
       type: String,
-      required: true,
-      unique: true,
       lowercase: true,
       trim: true,
+      sparse: true,
+      unique: true,
     },
     password: {
       type: String,
@@ -35,6 +35,8 @@ const userSchema = new Schema<UserDocument>(
 
     phone: {
       type: String,
+      required: true,
+      unique: true,
       trim: true,
     },
     roles :{
