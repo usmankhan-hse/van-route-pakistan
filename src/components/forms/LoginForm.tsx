@@ -144,7 +144,6 @@ const LoginForm = () => {
                 value={phone}
                 onChange={(event) => setPhone(event.target.value)}
                 placeholder="03XXXXXXXXX"
-                autoComplete="tel"
                 inputMode="tel"
                 required
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 text-base text-gray-950 outline-none transition placeholder:text-gray-400 focus:border-[#008F3A] focus:ring-4 focus:ring-green-100"
@@ -176,7 +175,6 @@ const LoginForm = () => {
                   setPassword(event.target.value)
                 }
                 placeholder="Enter your password"
-                autoComplete="current-password"
                 required
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 text-base text-gray-950 outline-none transition placeholder:text-gray-400 focus:border-[#008F3A] focus:ring-4 focus:ring-green-100"
               />
